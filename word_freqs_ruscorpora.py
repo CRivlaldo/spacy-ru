@@ -26,7 +26,7 @@ def count_words(corpus):
 def write_counts(filename, count):
     with open(filename, 'w') as f:
         for word, count in count.items():
-            f.write(f"{count['total']}\t{count['documents']}\t{word}\n")
+            f.write(f"{count['total']}\t{count['documents']}\tu'{word}'\n")
 
 
 def main():
